@@ -2,6 +2,8 @@
 #define CASTS_HPP
 
 #include <iostream>
+#include <limits>
+#include <climits>
 #include "ScalarConverter.hpp"
 
 #define RESET       "\033[0m"

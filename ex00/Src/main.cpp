@@ -25,13 +25,16 @@ void	sub_title(const std::string str)
 	std::cout << CYAN << title << RESET << std::endl;
 }
 
+
+
 int main(int argc, char *argv[])
 {
 	if (argc != 2)
 	{
-		std::cerr << "Must have one parameter <element>" << std::endl;
+		std::cerr << RED << "Error: Must have one parameter <element>" << RESET << std::endl;
 		return (1);
 	}
+
 	try
 	{
 		sub_title("Create ScalarConverter");
@@ -39,28 +42,14 @@ int main(int argc, char *argv[])
 		std::cout << std::endl;
 
 		sub_title("Display different types conversions");
-		std::cout << "\tchar: ";
-		cast.displayChar();
-		std::cout << std::endl;
-
-		std::cout << "\tint: ";
-		cast.displayInt();
-		std::cout << std::endl;
-
-		std::cout << "\tfloat: ";
-		cast.displayFloat();
-		std::cout << std::endl;
-
-		std::cout << "\tdouble: ";
-		cast.displayDouble();
-		std::cout << std::endl;
+		cast.displayConversions();
 		std::cout << std::endl;
 
 		sub_title("Destroy ScalarConverter");
 	}
 	catch (const ScalarConverter::ErrorException& e)
 	{
-		std::cerr << e.what() << std::endl;
+		std::cerr << RED << e.what() << RESET << std::endl;
 	}
 
 	return (0);
