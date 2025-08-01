@@ -34,8 +34,8 @@ int main(int argc, char *argv[])
 	Data	data;
 	data.name = "Bob";
 	data.months_at_42 = 12;
-	std::cout << "\t         data.name: " << data.name << std::endl;
-	std::cout << "\tdata.mopnths_at_42: " << data.months_at_42 << std::endl;
+	std::cout << "\t        data.name: " << data.name << std::endl;
+	std::cout << "\tdata.months_at_42: " << data.months_at_42 << std::endl;
 	std::cout << std::endl;
 
 	title("SERIALIZE AND DESERIALIZE");
@@ -52,8 +52,8 @@ int main(int argc, char *argv[])
 	std::cout << std::endl;
 
 	sub_title("Display data after serialization");
-	std::cout << "\t         data.name: " << data.name << std::endl;
-	std::cout << "\tdata.mopnths_at_42: " << data.months_at_42 << std::endl;
+	std::cout << "\t        new_data.name: " << new_data->name << std::endl;
+	std::cout << "\tnew_data.months_at_42: " << new_data->months_at_42 << std::endl;
 	std::cout << std::endl;
 
 	sub_title("Destructor");
