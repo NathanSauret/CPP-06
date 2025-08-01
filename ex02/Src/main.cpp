@@ -50,5 +50,13 @@ int main(void)
 		std::cout << std::endl;
 	}
 
+	title("TESTING WITH A NULL BASE");
+	Base *base = NULL;
+	sub_title("identify(Base* p)");
+	identify(base);
+
+	sub_title("identify(Base& p)");
+	identify(*base);
+
 	return (0);
 }
