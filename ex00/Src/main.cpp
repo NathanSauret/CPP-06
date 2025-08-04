@@ -35,22 +35,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	try
-	{
-		sub_title("Create ScalarConverter");
-		ScalarConverter	cast = ScalarConverter(argv[1]);
-		std::cout << std::endl;
-
-		sub_title("Display different types conversions");
-		cast.displayConversions();
-		std::cout << std::endl;
-
-		sub_title("Destroy ScalarConverter");
-	}
-	catch (const ScalarConverter::ErrorException& e)
-	{
-		std::cerr << RED << e.what() << RESET << std::endl;
-	}
+	ScalarConverter::convert(argv[1]);
 
 	return (0);
 }
