@@ -8,8 +8,6 @@
 class Serialize
 {
 	private:
-
-	public:
 		// Constructors
 		Serialize();
 		Serialize( const Serialize &src );
@@ -20,9 +18,10 @@ class Serialize
 		// Operators overload
 		Serialize	&operator=( const Serialize &src );
 
+	public:
 		// Class functions
-		uintptr_t	serialize(Data* ptr);
-		Data*		deserialize(uintptr_t raw);
+		static uintptr_t	serialize(Data* ptr);
+		static Data*		deserialize(uintptr_t raw);
 };
 
 #endif

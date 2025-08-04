@@ -39,16 +39,16 @@ int main(int argc, char *argv[])
 	std::cout << std::endl;
 
 	title("SERIALIZE AND DESERIALIZE");
-	sub_title("Create Serialize");
-	Serialize	serialize;
-	std::cout << std::endl;
+	// sub_title("Create Serialize");
+	// Serialize	serialize;
+	// std::cout << std::endl;
 
 	sub_title("Serialize");
-	uintptr_t ptr = serialize.serialize(&data);
+	uintptr_t ptr = Serialize::serialize(&data);
 	std::cout << std::endl;
 
 	sub_title("Deserialize");
-	Data *new_data = serialize.deserialize(ptr);
+	Data *new_data = Serialize::deserialize(ptr);
 	std::cout << std::endl;
 
 	sub_title("Display data after serialization");
