@@ -5,14 +5,14 @@ static Base *generate(void)
 	switch (rand() % 3)
 	{
 	case 0:
+		std::cout << "\tCreated type A base" << std::endl;
 		return (new A());
-		break;
 	case 1:
+		std::cout << "\tCreated type B base" << std::endl;
 		return (new B());
-		break;
 	case 2:
+		std::cout << "\tCreated type C base" << std::endl;
 		return (new C());
-		break;
 	}
 	return (NULL);
 }

@@ -8,9 +8,6 @@ class	Base
 	private:
 
 	public:
-		// Constructors
-		Base( void );
-
 		// Destructor
 		virtual ~Base( void );
 };

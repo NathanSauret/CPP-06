@@ -52,10 +52,10 @@ int main(void)
 
 	title("TESTING WITH A NULL BASE");
 	Base *base = NULL;
-	sub_title("identify(Base* p)");
+	sub_title("identify(Base* p), p=NULL");
 	identify(base);
 
-	sub_title("identify(Base& p)");
+	sub_title("identify(Base& p), p=NULL");
 	identify(*base);
 
 	return (0);
