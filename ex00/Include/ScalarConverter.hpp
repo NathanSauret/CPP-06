@@ -8,6 +8,7 @@
 #define FLOAT 3
 #define DOUBLE 4
 
+#include <string>
 
 class ScalarConverter
 {
